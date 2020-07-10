@@ -1,4 +1,4 @@
-.todo {
+.contact {
     background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Ffootball1.jpg') 50% 50% no-repeat;
     background-size: cover;
 
@@ -21,9 +21,11 @@
         font-size: 25px;
         font-family: 'edosz';
         color: rgb(0,0,0);
+        text-align: center;
     }
 
-    #task-field {
+    input,
+    textarea {
         width: 40%;
         padding: 15px 20px;
         border-style: none;
@@ -37,7 +39,9 @@
         box-sizing: border-box;
     }
 
-    #submit-task {
+    textarea { height : 150px}
+
+    button {
         padding: 5px 50px;
         border-style: none;
         border-bottom-left-radius: 7px;
@@ -53,7 +57,7 @@
         }
     }
 
-    ul {
+    .result {
         width: 40%;
         padding: 10px;
         margin: 0 auto;
@@ -62,53 +66,23 @@
         &.active {
             display: block;
         }
-    }
 
-    li {
-        width: 100%;
-        padding: 10px 20px;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin: 10px 0;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(255,255,255,0.85);
-        box-sizing: border-box;
-        text-transform: uppercase;
-
-        span {
-            width: 85%;
+        span,
+        p {
+            width: 100%;
+            padding: 10px 20px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(255,255,255,0.85);
+            box-sizing: border-box;
+            text-transform: uppercase;
             font-size: 13px;
-        }
-
-        a {
-            font-size: 13px;
-        }
-    }
-
-    .delete {
-        text-indent: -9999px;
-
-        &::before {
-            content: '\f1f8';
-            font-family: 'fontAwesome';
-            text-indent: 0;
-            float: right;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 17px;
-            color: #FF0000;
-            transition: 0.3s ease-in-out;
-        }
-
-        
-
-        &:hover::before {
-            color: rgb(0,0,0);
-            background-color: rgb(250, 204, 0);
         }
     }
 }

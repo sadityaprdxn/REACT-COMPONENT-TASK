@@ -1,10 +1,10 @@
 import React from 'react';
 import '../scss/App.scss';
-import Todo from './Todosection'
+import Form from './Form'
 
 function App() {
   return (
-    <Todo/>
+    <Form/>
   );
 }
 
