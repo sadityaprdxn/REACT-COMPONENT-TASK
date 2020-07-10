@@ -25,7 +25,7 @@ const Form = () => {
                 [id]: value
             })
         })
-    } 
+    }
 
     const showUser = (e) => {
         e.preventDefault();
@@ -33,6 +33,8 @@ const Form = () => {
             ...values,
             show: true
         });
+
+        setValues({firstname: '', lastname: '', message: ''});
     }
 
     return (
