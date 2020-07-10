@@ -40,14 +40,14 @@ const Form = () => {
             <div className="wrapper">
                 <form>
                     <h2>do you want to contact ?</h2>
-                    {inputs.map(({id, type}, index) => {
+                    {inputs.map(({id, type}) => {
                         return (
                         <Input 
                         id = {id}
                         type = {type}
                         value = {values[id]}
                         passValue = {updateValues}
-                        key = {index}
+                        key = {id}
                         />
                         )
                     })}
